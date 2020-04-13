@@ -16,9 +16,12 @@ int main()
 			max = len;
 			copy(line, longest);
 		}
+		if( len == max){
+			break;
+		}
 	}
 	if(max>0)
-		printf("%s",longest);
+		printf("%s\n",longest);
 
 	return 0;
 }
