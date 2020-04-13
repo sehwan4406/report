@@ -2,7 +2,7 @@
 #include<stddef.h>
 char *mygets(char *buf, size_t size) {
 	if(buf!=NULL && size > 0){
-		if(fgets(buf,size,strlen)){
+		if(fgets(size,strlen)){
 			buf[strcspn(buf,"\n")] = '\0';
 			return buf;
 		}
